@@ -1,0 +1,40 @@
+HTTP (HyperText Transfer Protocol) is the foundation for
+data communicate for the World Wide Web.
+
+It's the language that your browser (the client) and the
+server use to talkto each other.
+
+When you type in a URL into your browser, you are initiating
+an HTTP request-response cycle:
+
+1. The request is your browser asking for some data
+   (e.g., "Give me the data for a dashboard").
+
+2. The response is the server processing that request and
+   sending the data back
+   (e.g., "Here is the JSON file with your dashboard statistics").
+
+HTTP methods:
+GET: Retrieve data (e.g., loading your dashboard).
+POST: Send new data (e.g., submitting a new entry to your database).
+PUT: Update an entire row in a database table.
+PATCH: Update a column in a database row.
+DELETE: Removing data.
+
+The server tells you how the request was processed with status codes:
+2xx (Success)
+3xx (The resource moved.)
+4xx (Client Error): You made a mistake (e.g., 404 Not Found if you
+type in an incorrect URL, or 401 Unauthorised if you aren't logged in).
+5xx (Server Error): The server failed to process your request.
+
+Practical Exercise
+
+1. Open your web browser.
+2. Right-click anywhere and select "Inspect".
+3. Click on the "Network" tab.
+4. Refresh your current page.
+
+You will see a list of HTTP requests your browser sent to load the
+web page. If you click on any one of them, you can see the Headers,
+the Status Code and the Response (the data).

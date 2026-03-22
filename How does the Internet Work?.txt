@@ -1,16 +1,15 @@
-How does the Internet work - simple explanation
+How does the Internet work?
 
 The internet is a "network of networks".
 
 It connects millions of devices across the world so they can talk
 to each other.
 
-Think of a network as a group of connected devices.
+The term "network" here is a group of connected devices.
 
 For example, your home WiFi connects your phone, laptop, and TV.
 
 When you open a website, here is what happens:
-
 -> Your device sends a request (like "give me google.com")
 -> DNS translates the domain name into an IP address
 -> Your request is broken into small pieces called packets
@@ -19,7 +18,6 @@ When you open a website, here is what happens:
 -> Your browser rebuilds the data into a webpage
 
 Key ideas to remember:
-
 -> IP address = unique number for each device
 -> Domain name = human-friendly name (like google.com)
 -> DNS = translates name into IP address
@@ -31,10 +29,25 @@ Key ideas to remember:
 
 Easy interview answer to memorize:
 
-The internet is a global network of interconnected devices that
-communicate using standard protocols like TCP and IP. When a user
-requests a website, DNS translates the domain name into an IP
-address, the request is sent as packets through routers, and the
-server responds with data that is reassembled by the browser into
-a webpage. Protocols like HTTP and HTTPS define how this data is
-transferred, with HTTPS adding encryption for security.
+The internet is a network of devices that communicate
+using protocols like TCP and IP.
+
+When you enter a URL, DNS translates it into an IP
+address.
+
+The request is sent as packets through routers to
+the server, which responds with data.
+
+The browser reassembles this data into a webpage.
+
+HTTP defines how data is transferred, while HTTPS
+adds encryption for security.
+
+A DNS translates human-friendly names like google.com into an IP
+address that computers can understand.
+
+IP is responsible for ensuring that packets of data know where to
+go and how to reach the correct destination.
+
+TCP is responsible for making sure that data is delivered without
+errors.

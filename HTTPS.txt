@@ -1,0 +1,21 @@
+HTTPS is the secure version of HTTP.
+
+With HTTP anyone on the same network can intercept and read the data
+packets between the client and the server. HTTPS encrypts that data.
+
+HTTPS provides three layers of protection:
+1. Encryption:
+   Data is converted into ciphertext using cryptographic
+   algorithms so that only the intended recipient, who
+   has the correct key, can decrypt and read it.
+
+2. Data integrity:
+   A cryptographic hash is generated for the data.
+   The receiver recomputes the hash and compares it
+   to detect if any data was altered during transfer.
+
+3. Authentication:
+   Digital certificates issued by a trusted authority
+   verify the server's identity, ensuring the client
+   is communicating with the intended server and not
+   an attacker.
