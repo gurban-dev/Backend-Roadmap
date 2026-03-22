@@ -1,0 +1,40 @@
+How does the Internet work - simple explanation
+
+The internet is a "network of networks".
+
+It connects millions of devices across the world so they can talk
+to each other.
+
+Think of a network as a group of connected devices.
+
+For example, your home WiFi connects your phone, laptop, and TV.
+
+When you open a website, here is what happens:
+
+-> Your device sends a request (like "give me google.com")
+-> DNS translates the domain name into an IP address
+-> Your request is broken into small pieces called packets
+-> Routers send those packets across different paths
+-> The server receives the packets and sends data back
+-> Your browser rebuilds the data into a webpage
+
+Key ideas to remember:
+
+-> IP address = unique number for each device
+-> Domain name = human-friendly name (like google.com)
+-> DNS = translates name into IP address
+-> Packets = small chunks of data
+-> Routers = traffic directors of the internet
+-> TCP = ensures data arrives correctly and in order
+-> HTTP/HTTPS = rules for sending web data
+-> HTTPS = secure (encrypted) version of HTTP
+
+Easy interview answer to memorize:
+
+The internet is a global network of interconnected devices that
+communicate using standard protocols like TCP and IP. When a user
+requests a website, DNS translates the domain name into an IP
+address, the request is sent as packets through routers, and the
+server responds with data that is reassembled by the browser into
+a webpage. Protocols like HTTP and HTTPS define how this data is
+transferred, with HTTPS adding encryption for security.
