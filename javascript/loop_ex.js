@@ -11,8 +11,9 @@ repeatedly ask the user for input,
 stop only when the correct number is guessed,
 count the number of attempts,
 and display a countdown using a for loop before the game starts.
-Requirements
 
+
+Requirements
 
 Part 1: Countdown using a for loop
 
@@ -38,7 +39,8 @@ rl.question()
 
 Part 3: while loop
 
-Keep asking the user for guesses until they enter the correct number.
+Keep asking the user for guesses until they enter the correct
+number.
 
 Use a while loop.
 */
@@ -64,14 +66,15 @@ Track how many guesses the user makes.
 Example output:
 
 Correct!
-You guessed the number in 4 attempts.
+You guessed the secret number in 4 attempts.
 */
 
+// 'rl' references a readline.Interface object that allows the
+// program to read user input line by line.
 const rl = readline.createInterface({
     input,
     output
 });
 
+// Store the secret number that the user must guess.
 const secretNumber = 7;
-
-rl.close();
