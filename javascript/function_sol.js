@@ -75,13 +75,17 @@ function displayCityInfo(cityName, foundingYear, region) {
     );
 }
 
+// The name of the argument 'nameOfCity', does not have to match
+// the name of the parameter 'cityName'.
+const nameOfCity = ' Jericho ';
+
 /*
 Execute the main function with sample data for Jericho,
 which is considered one of the oldest continuously
 inhabited cities in the world.
 */
 displayCityInfo(
-    ' Jericho ',
+    nameOfCity,
     -9000,
     'Middle East'
 );
