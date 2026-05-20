@@ -30,9 +30,7 @@ This arrow function calculates the approximate age of the
 city by subtracting the founding year from the current year.
 The returned value represents how old the city is.
 */
-const calculateCityAge = (foundingYear) => {
-    return currentYear - foundingYear;
-};
+const calculateCityAge = (foundingYear) => currentYear - foundingYear;
 
 /*
 This function is responsible only for displaying the city
@@ -58,13 +56,12 @@ program. It calls smaller helper functions to:
 Because each helper function has a single responsibility,
 the program becomes easier to understand, test, and modify.
 */
-function displayCityInfo(cityName, foundingYear, region) {
+function displayCityReport(cityName, foundingYear, region) {
     // Clean the city name before displaying it.
-    const formattedName =  formatCityName(cityName);
+    const formattedName = formatCityName(cityName);
 
     // Calculate the approximate age of the city.
-    const cityAge =
-        calculateCityAge(foundingYear);
+    const cityAge = calculateCityAge(foundingYear);
 
     // Pass the processed data into the display function.
     printCityCard(
@@ -75,8 +72,10 @@ function displayCityInfo(cityName, foundingYear, region) {
     );
 }
 
-// The name of the argument 'nameOfCity', does not have to match
-// the name of the parameter 'cityName'.
+// 'nameOfCity' is the argument.
+// 'cityName' is the parameter.
+
+// Their names do not need to match.
 const nameOfCity = ' Jericho ';
 
 /*
@@ -84,7 +83,7 @@ Execute the main function with sample data for Jericho,
 which is considered one of the oldest continuously
 inhabited cities in the world.
 */
-displayCityInfo(
+displayCityReport(
     nameOfCity,
     -9000,
     'Middle East'
